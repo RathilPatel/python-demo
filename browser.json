@@ -1,20 +1,20 @@
 [
     {
       "browser": "firefox",
-      "browser_version": "67.0",
+      "browser_version": "latest",
       "os": "Windows",
       "os_version": "8",
-      "name":" Parallel test 1: Win 8.1 Firefox 67",
+      "name":" Parallel test 1: Win 8 Firefox Latest",
       "build" : "Python Demo",
       "browserstack.debug"  : "true",
       "browserstack.geoLocation"  : "IN"
     },
     {
       "browser": "chrome",
-      "browser_version": "78.0",
+      "browser_version": "latest",
       "os": "Windows",
-      "os_version": "7",
-      "name":"Parallel test 2: Win 7 Chrome 75",
+      "os_version": "10",
+      "name":"Parallel test 2: Win 10 Chrome Latest",
       "build"  : "Python Demo",
       "browserstack.debug"  : "true",
       "browserstack.geoLocation"  : "IN"
