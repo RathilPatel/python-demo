@@ -8,9 +8,9 @@ BROWSERSTACK_ACCESS_KEY = os.environ['BROWSERSTACK_ACCESS_KEY']
 
 desired_cap = {
 'browser': 'Chrome',
- 'browser_version': '75.0',
+ 'browser_version': 'latest',
  'os': 'Windows',
- 'os_version': '7',
+ 'os_version': '10',
  'resolution': '1024x768',
  'name': 'Python Sample Single Test',
  'build':'Python Demo',

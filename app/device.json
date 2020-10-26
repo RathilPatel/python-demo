@@ -1,0 +1,27 @@
+[
+	{
+"os_version" : "9.0",
+"device" : "Google Pixel 3",
+"project" : "Sample-project",
+"build" : "Appium-android",
+"name" : "Test",
+"app" : "AndroidDemoApp"
+},
+{
+"os_version" : "10.0",
+"device" : "Samsung Galaxy S20 Plus",
+"project" : "Sample-project",
+"build" : "Appium-android",
+"name" : "Test",
+"app" : "AndroidDemoApp"
+},
+{
+"os_version" : "10.0",
+"device" : "OnePlus 7T",
+"project" : "Sample-project",
+"build" : "Appium-android",
+"name" : "Test",
+"app" : "AndroidDemoApp"
+}
+
+]

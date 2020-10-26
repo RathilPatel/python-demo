@@ -1,21 +1,21 @@
 import os,subprocess
 
 try:
-	subprocess.call(["python3","single.py"])
+	subprocess.call(["python3","web/single.py"])
 
-	subprocess.call(["python3","parallel.py"])
+	subprocess.call(["python3","web/parallel.py"])
 
-	subprocess.call(["python3","local.py"])
+	subprocess.call(["python3","web/local.py"])
 
-	subprocess.call(["python3","android-appium.py"])
+	subprocess.call(["python3","app/android-appium.py"])
 
-	subprocess.call(["python3","ios-appium.py"])
+	subprocess.call(["python3","app/ios-appium.py"])
 
-	subprocess.call(["python3","espresso.py"])
+	subprocess.call(["python3","app/espresso.py"])
 
-	subprocess.call(["python3","xcuitest.py"])
+	subprocess.call(["python3","app/xcuitest.py"])
 
-	subprocess.call(["python3","earlgrey.py"])
+	subprocess.call(["python3","app/earlgrey.py"])
 
 
 
