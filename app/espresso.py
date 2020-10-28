@@ -59,7 +59,7 @@ headers = {
     'Content-Type': 'application/json',
 }
 
-data = '{"devices": ["Samsung Galaxy S8-7.0"], "app": "EspressoApp", "deviceLogs" : "true", "testSuite": "EspressoTestApp"}'
+data = '{"devices": ["OnePlus 7-9.0"], "app": "EspressoApp", "deviceLogs" : "true", "testSuite": "EspressoTestApp"}'
 
 response = requests.post('https://api-cloud.browserstack.com/app-automate/espresso/build', headers=headers, data=data, auth=(BROWSERSTACK_USERNAME,BROWSERSTACK_ACCESS_KEY))
 ###################Espresso Run Test #########################

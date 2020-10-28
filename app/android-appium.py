@@ -31,7 +31,8 @@ if not_uploaded == False:
 desired_caps = {
     "name": "Appium Google Search Demo",
     "build": "Python android ",
-	"device" : "Samsung Galaxy S8",
+	"os_version" : "10.0",
+	"device" : "OnePlus 7T",
 	"app" : "AndroidDemoApp",
 }
  

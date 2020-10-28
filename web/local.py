@@ -9,15 +9,15 @@ BROWSERSTACK_ACCESS_KEY = os.environ['BROWSERSTACK_ACCESS_KEY']
 
 
 bs_local = Local()
-bs_local_args = { "key": BROWSERSTACK_ACCESS_KEY }
+bs_local_args = { "key": BROWSERSTACK_ACCESS_KEY , "onlyAutomate": "true" }
 bs_local.start(**bs_local_args)
 # print ("Success starting local!!")
 
 desired_cap = {
  'browser': 'Chrome',
- 'browser_version': '75.0',
+ 'browser_version': 'latest',
  'os': 'Windows',
- 'os_version': '7',
+ 'os_version': '10',
  'resolution': '1024x768',
  'browserstack.local' : 'true',   # LOCAl CAPABILITY
  'name': 'Python Local APIs',
