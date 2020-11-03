@@ -6,6 +6,7 @@ from browserstack.local import Local
 
 BROWSERSTACK_USERNAME = os.environ['BROWSERSTACK_USERNAME']
 BROWSERSTACK_ACCESS_KEY = os.environ['BROWSERSTACK_ACCESS_KEY']
+BROWSERSTACK_LOCAL_IDENTIFIER = os.environ['BROWSERSTACK_LOCAL_IDENTIFIER']
 
 
 
@@ -16,6 +17,7 @@ desired_cap = {
  'os_version': '7',
  'resolution': '1024x768',
  'browserstack.local' : 'true',   # LOCAl CAPABILITY
+ 'browserstack.localIdentifier':BROWSERSTACK_LOCAL_IDENTIFIER,
  'name': 'Python Local APIs',
  'build': 'Python Demo'
 }
