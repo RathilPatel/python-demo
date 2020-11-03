@@ -8,10 +8,6 @@ BROWSERSTACK_USERNAME = os.environ['BROWSERSTACK_USERNAME']
 BROWSERSTACK_ACCESS_KEY = os.environ['BROWSERSTACK_ACCESS_KEY']
 
 
-bs_local = Local()
-bs_local_args = { "key": BROWSERSTACK_ACCESS_KEY }
-bs_local.start(**bs_local_args)
-# print ("Success starting local!!")
 
 desired_cap = {
  'browser': 'Chrome',
@@ -39,5 +35,4 @@ try:
         print("Marked Test Fail using REST API") # Rest Api for Fail !
 
 finally:
-    bs_local.stop()
     driver.quit()
