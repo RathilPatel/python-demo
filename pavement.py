@@ -28,7 +28,7 @@ def run(args):
         "local" : "python web/local.py",
         "appium-android" : "python app/android-appium.py",
         "appium-ios" : "python app/ios-appium.py",
-        "app-parallel" : "python app/parallel_app.py",
+        "app-parallel" : "python3 app/parallel_app.py",
         "espresso" : "python app/espresso.py",
         "xcuitest" : "python app/xcuitest.py",
         "earlgrey" : "python app/earlgrey.py",
