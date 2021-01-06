@@ -23,16 +23,16 @@ setup(
 def run(args):
     """Run single, local and parallel test using different config."""
     switcher = {
-        "single" : "python web/single.py",
-        "parallel" : "python web/parallel.py",
-        "local" : "python web/local.py",
-        "appium-android" : "python app/android-appium.py",
-        "appium-ios" : "python app/ios-appium.py",
+        "single" : "python3 web/single.py",
+        "parallel" : "python3 web/parallel.py",
+        "local" : "python3 web/local.py",
+        "appium-android" : "python3 app/android-appium.py",
+        "appium-ios" : "python3 app/ios-appium.py",
         "app-parallel" : "python3 app/parallel_app.py",
-        "espresso" : "python app/espresso.py",
-        "xcuitest" : "python app/xcuitest.py",
-        "earlgrey" : "python app/earlgrey.py",
-        "health-repo" : "python repohealth.py",
+        "espresso" : "python3 app/espresso.py",
+        "xcuitest" : "python3 app/xcuitest.py",
+        "earlgrey" : "python3 app/earlgrey.py",
+        "health-repo" : "python3 repohealth.py",
 
     }
     print(switcher.get(args[0],"nothing"))
