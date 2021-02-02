@@ -23,12 +23,12 @@
 ## Running your tests
 * To run a single test, run `paver run single`
 * To run local tests, run `paver run local`
-* To run parallel tests, run `ppaver run parallel`
+* To run parallel tests, run `paver run parallel`
 * To run Appium tests for IOS, run `paver run appium-android`
 * To run Appium tests for Android, run `paver run appium-ios`
 * To run Espresso tests,run `paver run espresso`
 * To run XcuiTest tests,run `paver run xcuitest`
-* To run Earlgrey tests,run `ppaver run earlgrey`
+* To run Earlgrey tests,run `paver run earlgrey`
 
 ## Notes
 * You can view your test results on the [BrowserStack Automate dashboard](https://www.browserstack.com/automate)
