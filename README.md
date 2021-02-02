@@ -7,7 +7,7 @@
 ## Prerequisites
 
 * [Brew](https://docs.brew.sh/Installation) (Optional)
-* Python3 (Installation notes [here](https://gist.github.com/RathilVasani/0ab70692688b3632d447ced5c277a9be))
+* Python3 (Installation notes [here](https://gist.github.com/RathilVasani/0ab70692688b3632d447ced5c277a9be))(Recommended Python version 3.6 & 3.7)
 * [BrowserStack Automate](https://www.browserstack.com/automate) account with at least 4 parallel tests. Signup for a free trial [here](https://www.browserstack.com/users/sign_up).
 
 ## Setup
