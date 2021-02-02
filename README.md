@@ -20,6 +20,9 @@
   export BROWSERSTACK_USERNAME=<browserstack-username> &&
   export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
   ```
+
+* To start Local server execute `python -m http.server 8000` in the demo folder within terminal 
+
 ## Running your tests
 * To run a single test, run `paver run single`
 * To run local tests, run `paver run local`

@@ -4,7 +4,7 @@
     "browser_version": "latest",
     "os": "Windows",
     "os_version": "10",
-    "name":"Parallel test 1: Win 10 Chrome Latest",
+    "name":"Parallel test 1: Win 10 Firefox Latest",
     "build"  : "Python Demo",
     "browserstack.debug"  : "true",
     "browserstack.geoLocation"  : "IN"
