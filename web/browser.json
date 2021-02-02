@@ -1,6 +1,6 @@
 [
   {
-    "browser": "Edge",
+    "browser": "firefox",
     "browser_version": "latest",
     "os": "Windows",
     "os_version": "10",
