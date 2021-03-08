@@ -31,7 +31,8 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    paver run single
-    pip install pytest pytest-azurepipelines
-    pytest
-  displayName: 'pytest'
+    paver run parallel
+    
+  displayName: 'Browserstack Parallel Run'
+
+- task: BrowserStackResults@0
