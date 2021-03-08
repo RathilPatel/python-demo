@@ -35,4 +35,4 @@ steps:
   displayName: 'Browserstack Parallel Run'
 
 - task: BrowserStackResults@0
-  displayName: : 'Bstack Results'
+  displayName: 'Bstack Results'
