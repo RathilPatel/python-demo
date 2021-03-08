@@ -32,7 +32,7 @@ steps:
 
 - script: |
     paver run parallel
-    - task: BrowserStackResults@0
   displayName: 'Browserstack Parallel Run'
 
-
+- task: BrowserStackResults@0
+  displayName: : 'Bstack Results'
