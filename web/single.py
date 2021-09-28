@@ -14,7 +14,8 @@ desired_cap = {
  'resolution': '1024x768',
  'name': 'Python Sample Single Test',
  'build':'Python Demo',
- 'browserstack.debug':'true'
+ 'browserstack.debug':'true',
+ 'browserstack.local':'true'
 }
 
 driver = webdriver.Remote(
