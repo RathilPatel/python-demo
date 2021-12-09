@@ -1,3 +1,4 @@
+import selenium
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
@@ -14,23 +15,27 @@ desired_cap = {
  'resolution': '1024x768',
  'name': 'Python Sample Single Test',
  'build':'Python Demo',
- 'browserstack.debug':'true',
- 'browserstack.local':'true'
+ 'browserstack.debug':'true'
 }
 
-driver = webdriver.Remote(
-    command_executor='https://%s:%s@hub-cloud.browserstack.com/wd/hub' % (BROWSERSTACK_USERNAME, BROWSERSTACK_ACCESS_KEY),
-    desired_capabilities=desired_cap)
-print("Single Test Started...")
+driver = webdriver.Remote(command_executor='https://%s:%s@hub.browserstack.com/wd/hub' % (BROWSERSTACK_USERNAME, BROWSERSTACK_ACCESS_KEY),desired_capabilities=caps)
+try:
+    driver.get("http://www.google.com")
+    if not "Google" in driver.title:
+        raise Exception("Unable to load google page!")
+    elem = driver.find_element_by_name("q")
+    elem.send_keys("BrowserStack")
+    elem.submit()
+    print (driver.title)
+    if "BrowserStack - Google Search" in driver.title:
+        driver.execute_script('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed", "reason": "Page Title Matched!!"}}')
+    else:
+        driver.execute_script('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed", "reason": "Page Titled didn\'t Match! "}}')
 
-driver.get("http://www.google.com")
+except:
+    driver.execute_script('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed", "reason": "Exception occured check Local console Log "}}')
 
-time.sleep(5)
-if not "Google" in driver.title:
-    raise Exception("Unable to load google page!")
-elem = driver.find_element_by_name("q")
-time.sleep(20)
-elem.send_keys("BrowserStack")
-elem.submit()
-print (driver.title)
-driver.quit()
+
+
+finally:
+    driver.quit()
